@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>Konversi Suhu</h1>
+  </div>
+
+  <div class="row">
+    <div class="column">
+    <form id="tempConverter">
+      <label for="unit">Pilih</label>
+        <select id="unit" name="unit">
+          <option value="celsius">Celsius ke Fahrenheit</option>
+          <option value="fahrenheit">Fahrenheit ke Celcius</option>
+        </select>
+
+      <label for="temperature">Masukan Suhu Derajat</label>
+      <input type="number" id="temperature" name="temperature" required>
+    
+      <button type="submit">Konversi</button>
+    </form>
+
+    <div id="result"></div>
+    </div>
+
+    <div class="column">
+      <h3>Cara Mengonversi Celsius Ke Fahrenheit</h3>
+      <p>
+        0 derajat Celcius sama dengan 32 derajat Fahrenheit:<br>
+        0 ° C = 32 ° F <br>
+        Suhu T dalam derajat Fahrenheit (° F) sama dengan suhu T dalam derajat Celcius (° C) kali 9/5 ditambah 32:<br>
+        T (° F) = T (° C) × 9/5 + 32 <br>
+        atau <br>
+        T (° F) = T (° C) × 1,8 + 32</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Konversi Suhu &copy; 2023, Ghaniarf</p>
+  </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
